@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rishika Endal Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Rishika Endal</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url();">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Rishika Endal</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Java  Developer ',
+						'Java Front End Developer  ',
+						'Java Back End Developer  ',
+						'Java Full Stack Developer',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Full Stack Java Developer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			           
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="/Users/manmohankrishna/Downloads/Portfolio-Website-Template-main/images/profile_photo.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Rishika Endal</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Full Stack Java Developer</span></p>
+										<p><span class="title-s">Experience: </span> <span>8 Years</span></p>
+										<p><span class="title-s">Address: </span> <span>USA</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Java</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>HTML</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>CSS</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>React</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Angular</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Spring Boot</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>MySQL</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>AWS</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Full Stack Java Developer with 8 years of experience across all phases of the SDLC. Skilled in designing, developing, and testing enterprise-level web and client/server applications using Java,
+									 Spring Boot, and React. Proficient in building scalable microservices and web solutions, with a focus on Agile methodologies, CI/CD practices, and cloud-native development. 
+									 Proven ability to deliver high-performance solutions that drive business growth, with successful projects in healthcare, retail, insurance and  finance</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Full Stack Java Developer</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Healthcare, Retail, Insurance and  Finance</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Master's in Computer and Information Sciences</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Telugu</span></li>
+									<li class="d-flex"><span>Tools and Technologies:</span> <span>React.js,Angular,HTML5, CSS3, Bootstrap, TypeScript,Spring Boot, Spring MVC, Spring REST, Spring Data JPA, SOAP, GraphQL, Microservices Architecture,AWS,MySQL,Docker, Kubernetes, , Git</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="4">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/rishika-endal-9669b6341" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Full Stack Java Developer with 8 years of experience across all phases of the SDLC. Skilled in designing, developing, and testing enterprise-level web and client/server applications using Java, Spring Boot, and React. Proficient in building scalable microservices and web solutions, with a focus on Agile methodologies, CI/CD practices, and cloud-native development. Proven ability to deliver high-performance solutions that drive business growth, with successful projects in healthcare, retail, insurance and  finance.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Feb 2023– Present</span>
+						<h2>Full Stack Java Developer</h2>
+						<span class="position">Western Union</span>
+						<p class="mt-4">Western Union, is a global leader in cross-border, cross-currency money movement, offering innovative solutions to connect individuals, businesses, and communities worldwide. The company’s technology enables secure and efficient financial transactions, supports international remittances, and empowers businesses with payment solutions, ensuring accessibility and reliability in the global financial ecosystem. 
+							<ul>
+								<li>Developed user interfaces using React JS, incorporating components, forms, events, animations, and React Router for module-level routing.</li>
+								<li> Optimized rendering with React Suspense, lazy loading, and performance techniques like memo and PureComponent.</li>
+								<li>Utilized React Hooks (useState, useEffect, useContext, useReducer) for cleaner, functional code. </li>
+								<li>Built real-time data streaming with WebSockets and integrated Elasticsearch for real-time analytics.</li>
+								<li>Created reusable, responsive components with styled-components and integrated third-party authentication via Firebase Auth.</li>
+								<li>Developed RESTful APIs using Node.js, Express, and Spring Boot, implementing microservices, Spring Data JPA, and Hibernate for optimized database interaction.</li>
+								<li>Set up AWS EC2, S3, and Elastic Load Balancers for fault-tolerant, highly available cloud infrastructure. </li>
+								<li>Deployed services in Docker containers, orchestrated with Kubernetes, and integrated CI/CD pipelines using Jenkins and GitLab CI for automated testing, version control, and deployment.</li>
+                            </ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Dec 2020 to Jan 2023</span>
+						<h2>Full Stack Java Developer</h2>
+						<span class="position">Delta Dental Ins</span>
+						<p class="mt-4">Delta Dental Insurance is a  dental benefits provider, offering comprehensive dental insurance solutions to individuals, families, and businesses. The company focuses on enhancing oral health and wellness by providing access to a vast network of dentists, innovative plan options, and exceptional customer service. 
+							<ul>
+								<li>Built dynamic front-end applications from scratch using HTML5, CSS3, JavaScript, jQuery, Bootstrap, AngularJS, and Node.js, creating custom directives, factories, services, and controllers to manage scope isolation and ensure modular design.</li>
+								<li>Implemented Spring MVC for Java-based web applications, using Spring IOC for bean configuration, Spring Hibernate for database interactions, and Spring Security with OAuth 2 for authentication and authorization. Utilized Java 8 features like lambda expressions, multithreading, and efficient collection operations.</li>
+								<li>Deployed Microservices in Docker containers for increased isolation and scalability. Worked with Kafka for messaging queues and AWS EC2 to host and manage cloud-based applications, integrating with Elastic Beanstalk for deployment.</li>
+								<li>Developed unit tests using JUnit in Eclipse, ensuring code reliability. Utilized Maven for build management and Jenkins for continuous integration and cross-platform application scalability.</li>
+								<li>Worked with AWS Lambda for event-driven functions, integrated Amazon S3 for object storage, and used AWS CloudWatch for application monitoring. Configured AWS Glacier for data archiving and managed queues with AWS SQS.</li>
+							</ul>	
+
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Jan 2019-Nov 2020</span>
+					<h2>Full Stack Java Developer</h2>
+					<span class="position">Sephora</span>
+					<p class="mt-4">Sephora is a global leader in beauty retail, offering an extensive selection of high-quality cosmetics, skincare, fragrance, and personal care products. It provides a unique shopping experience through expert consultations, personalized recommendations, and cutting-edge digital tools.
+						<ul>	
+						    <li>Developed web applications using HTML5, CSS3, Bootstrap, AngularJS, and jQuery, implementing animations and screen customizations. Worked on the presentation layer and GUI framework, and rendered additional components with React.js.</li>
+							<li>Implemented business logic using Spring middleware and SOA-based architecture. Developed and consumed RESTful web services, and utilized AJAX and Angular Resources for API interactions.</li>
+							<li>Designed database schema, created PL/SQL stored procedures, functions, triggers, and optimized SQL queries for performance tuning to improve application response time.</li>
+							<li>Automated deployment using Maven, integrated with Jenkins for continuous integration, and migrated from SVN to GitHub. Utilized Log4j for logging and Swagger for API documentation.</li>
+							<li>Managed cloud infrastructure using AWS services, including VPC, EC2, S3, CloudFront, ELB, and Elastic Beanstalk, ensuring efficient deployment and scalability.</li>
+			            </ul>
+					</p>
+				</div>
+
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">July 2016– Dec 2018</span>
+					<h2>Java Developer</h2>
+					<span class="position">Voyager IT Solutions</span>
+					<p class="mt-4">Voyager IT Solutions is a dynamic technology services provider specializing in innovative IT solutions for businesses across various industries. The company focuses on delivering end-to-end services, including software development, system integration, and IT consulting It helps organizations optimize their operations, enhance efficiency, and achieve their digital transformation goals.</p>
+						<li>Developed user-friendly web interfaces using HTML, CSS, and JSP.</li>
+						<li>Utilized core Java concepts, including OOP, exception handling, collections, multithreading, and Java Generics, to build robust and maintainable applications.</li>
+						<li>Configured and managed J2EE servers, like Apache Tomcat and IBM WebSphere, and applied design patterns for reusable and maintainable code.</li>
+						<li>Developed the application using Spring MVC that leverages classical MVC architecture and JavaScript for data entry that require data validation at client side. </li>
+						<li>Used JDBC with Hibernate for efficient database interaction, performing CRUD operations and executing complex SQL queries, and integrated with JSP for dynamic web content generation.</li>
+						<li>Implemented SOAP web services with XML for secure and reliable communication between distributed systems.</li>
+						<li>Designed and optimized MySQL databases, enhancing data storage, retrieval, and query performance for improved application scalability.</li>
+						<li>Implemented unit testing with JUnit, ensuring code quality by writing </li>
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+	<br>
+	<br>
+
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2024</span>
+    					<h2>Master's in Computer and Information Sciences</h2>
+    					<span class="position">University of Texas at Arlington</span>
+    					<p class="mt-4">CGPA:3.6</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2013-2017</span>
+    					<h2>Bachelor's in Information Technology</h2>
+    					<span class="position">JNTUH</span>
+    					<p class="mt-4">CGPA: 8.0</p>
+    				</div>
+				</div>
+    		</div>
+
+    		
+    	</div>
+    </section>
+
+   
+
+    
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<br>
+						<a href="https://github.com/endalrishikarao" class="btn btn-primary py-3 px-5">GitHub</a>
+
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>United States</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="">+ 1 469 844 0273</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="endalrishikarao@gmail.com">endalrishikarao@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/rishika-endal-9669b6341"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href=""><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
