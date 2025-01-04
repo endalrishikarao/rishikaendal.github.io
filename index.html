@@ -135,71 +135,68 @@
 	      </div>
 	    </div>
 	  </nav>
+
+
 	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url();">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Rishika Endal</span></h1>
+  <div class="home-slider owl-carousel">
+    <div class="slider-item">
+      <div class="overlay"></div>
+      <div class="container">
+        <div 
+          class="row d-flex no-gutters slider-text align-items-center justify-content-center"
+          data-scrollax-parent="true"
+          style="height: 100vh;"
+        >
+          <div 
+            class="text text-center ftco-animate"
+            data-scrollax="properties: { translateY: '0%' }"
+          >
+            <span class="subheading">Hello!</span>
+            <h1 class="mb-4 mt-3">I'm <span>Rishika Endal</span></h1>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+            <!-- Element to contain animated typing -->
+            <span id="typing-animation"></span>
 
-						<script>
+            <script>
+              // Initialize the typing animation
+              const typingAnimationElement = document.getElementById('typing-animation');
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+              // Create an array of typing text
+              const typingTexts = [
+                'Java Developer',
+                'AWS Certified Developer Associate',
+                'Java Front End Developer',
+                'Java Back End Developer',
+                'Java Full Stack Developer',
+              ];
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Java  Developer ',
-						'AWS Certified Developer Associate',
-						'Java Front End Developer  ',
-						'Java Back End Developer  ',
-						'Java Full Stack Developer',
-						];
+              // Typing animation function
+              function playTypingAnimation(text, index = 0) {
+                if (index < text.length) {
+                  typingAnimationElement.textContent += text[index];
+                  setTimeout(() => playTypingAnimation(text, index + 1), 200);
+                } else {
+                  setTimeout(() => {
+                    typingAnimationElement.textContent = '';
+                    playTypingAnimation(
+                      typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]
+                    );
+                  }, 2000);
+                }
+              }
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+              // Start the typing animation
+              playTypingAnimation(typingTexts[0]);
+            </script>
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>Full Stack Java Developer</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			           
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
+            <br><br>
+            <h2>Full Stack Java Developer</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
